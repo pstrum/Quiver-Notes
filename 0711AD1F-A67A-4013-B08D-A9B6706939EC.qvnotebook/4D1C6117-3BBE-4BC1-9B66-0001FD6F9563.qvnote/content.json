@@ -1,0 +1,14 @@
+{
+  "title": "Staircases",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## Problem Statement\n\nYour teacher has given you the task of drawing a staircase structure. Being an expert programmer, you decided to make a program to draw it for you instead. Given the required height, can you print a staircase as shown in the example?\n\n##Input \n\nYou are given an integer N depicting the height of the staircase.\n\n## Output \n\nPrint a staircase of height N that consists of # symbols and spaces. For example for N=6, here's a staircase of that height:\n\n     #\n    ##\n   ###\n  ####\n #####\n######\n\n**Note**: The last line has 0 spaces before it."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function main() {\n  var n = parseInt(readLine());\n  var stairs = \"\";\n\n  for (var i = 1; i <= n; i++) {\n    \n    var spaces = n - i;\n    var hashes = i;\n    \n    while (spaces > 0) {\n      stairs += \" \";\n      spaces--;\n    }\n    \n    while (hashes > 0) {\n      stairs += \"#\";\n      hashes--;\n    }\n    \n    stairs += \"\\n\";\n  }\n  \n  console.log(stairs);\n  \n}"
+    }
+  ]
+}

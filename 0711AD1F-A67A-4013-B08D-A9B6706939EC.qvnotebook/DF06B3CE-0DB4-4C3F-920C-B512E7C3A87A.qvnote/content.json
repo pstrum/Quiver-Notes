@@ -1,0 +1,14 @@
+{
+  "title": "Plus Minus",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div><b>Problem Statement</b></div><div><br></div><div>Given an array of integers, calculate which fraction of the elements are positive, negative, and zeroes, respectively. Print the decimal value of each fraction.</div><div><br></div><div><b>Input Format</b></div><div><br></div><div>The first line, N, is the size of the array.&nbsp;</div><div>The second line contains N space-separated integers describing the array of numbers (A1,A2,A3,⋯,AN).</div><div><br></div><div><b>Output Format</b></div><div><br></div><div>Print each value on its own line with the fraction of positive numbers first, negative numbers second, and zeroes third.</div><div><br></div><div><b>Sample Input</b></div><div><br></div><div>6</div><div>-4 3 -9 0 4 1 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div><div>Sample Output</div><div><br></div><div>0.500000</div><div>0.333333</div><div>0.166667</div><div>Explanation</div><div><br></div><div>There are 3 positive numbers, 2 negative numbers, and 1 zero in the array.&nbsp;</div><div>The fraction of the positive numbers, negative numbers and zeroes are 36=0.500000, 26=0.333333 and 16=0.166667, respectively.</div><div><br></div><div><b>Note:</b> This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to 10−4 are acceptable.</div>"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function main() {\n  \"use strict\";\n  \n  var n = parseInt(readLine());\n  var arr = readLine().split(' ');\n  arr = arr.map(Number);\n  \n  var pos = 0;\n  var neg = 0;\n  var zer = 0;\n  \n  arr.forEach(function(element) {\n    if (element < 0) {\n      neg++;\n    } else if (element == 0) {\n      zer++;\n    } else if (element > 0) {\n      pos++\n    }\n  });\n  \n  console.log(pos / n);\n  console.log(neg / n);\n  console.log(zer / n);\n\n}"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Contact Menu with Logic",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "The styles for the menu:"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": ".contact-menu {\n  visibility: hidden;\n  display: none;\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "When the menu button is clicked:"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"button\").click(function() {\n  $(\".hidden\").toggleClass(\".contact-list\");\n});"
+    },
+    {
+      "type": "markdown",
+      "data": "The menu looks like this:"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "<button type=\"menu\" menu=\"contact-menu\">\n  <svg></svg>\n  Contact\n</button>\n\n<menu type=\"context\" id=\"contact-menu\">\n  <li></li>\n</menu>"
+    }
+  ]
+}

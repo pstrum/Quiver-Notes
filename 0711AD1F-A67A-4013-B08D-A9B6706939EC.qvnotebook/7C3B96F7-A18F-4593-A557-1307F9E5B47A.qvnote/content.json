@@ -1,0 +1,14 @@
+{
+  "title": "Diagonal Difference",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div><b>Problem Statement</b></div><div><br></div><div>Given a square matrix of size N×N, calculate the absolute difference between the sums of its diagonals.</div>"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function main() {\n  \"use strict\";\n  \n  // Convert matrix to 2d array\n  var n = parseInt(readLine());\n  var a = [];\n  for(var a_i = 0; a_i < n; a_i++){\n     a[a_i] = readLine().split(' ');\n     a[a_i] = a[a_i].map(Number);\n  }\n  \n  // So we want to add a[0][0] with a[1][1] with a[2][2] with a[3][3]\n  // Which is equivalent to:\n  var diag = 0;\n  var diag2 = 0;\n  \n  for (let i = 0; i < a.length; i++) {\n    diag += a[i][i];\n  }\n  \n  // Then we want to add a[0][3] + a[1][2] + a[2][1] + a[3][0]\n  // So we set up a counter called firstDim (first dimension on array)\n  var firstDim = 0;\n  for (let i = n - 1; i >= 0; i--) {\n    diag2 += a[firstDim][i];\n    firstDim++;\n  }\n  \n  // Then we subtract the first and second diagonal and absolute it\n  console.log(Math.abs(diag - diag2));\n}\n"
+    }
+  ]
+}

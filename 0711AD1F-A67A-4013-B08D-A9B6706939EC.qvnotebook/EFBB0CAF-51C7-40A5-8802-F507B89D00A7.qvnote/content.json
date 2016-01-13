@@ -1,0 +1,14 @@
+{
+  "title": "Time Conversion",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## Problem Statement\n\nGiven a time in AM/PM format, convert it to military (24-hour) time.\n\n**Note**: Midnight is 12:00:00AM on a 12-hour clock and 00:00:00 on a 24-hour clock. Noon is 12:00:00PM on a 12-hour clock and 12:00:00 on a 24-hour clock.\n\n## Input Format\n\nA time in 12-hour clock format (i.e.: hh:mm:ssAM or hh:mm:ssPM), where 01≤hh≤12.\n\n## Output Format\n\nConvert and print the given time in 24-hour format, where 00≤hh≤23.\n\n## Sample Input\n\n07:05:45PM\nSample Output\n\n19:05:45\nExplanation\n\n7 PM is after noon, so you need to add 12 hours to it during conversion. 12 + 7 = 19. Minutes and seconds do not change in 12-24 hour time conversions, so the answer is 19:05:45."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function main() {\n  var time = readLine();\n  \n  var timeArray = time.split(\":\");\n  var amORpm = timeArray[2][2];\n  var hours = Number(timeArray[0]);\n  var noAmPm = timeArray[2].replace(/pm|am/i, \"\");\n  \n  if (amORpm == \"P\" && hours < 12 || amORpm == \"A\" && hours == 12) {\n    \n    var toArmy = hours < 12 ? hours + 12 : \"00\";\n    timeArray.splice(0, 1, String(toArmy));\n    timeArray.splice(2, 1, noAmPm);\n    \n    var newTime = timeArray.join(\":\");\n    console.log(newTime);\n  } else {\n    \n    timeArray.splice(2, 1, noAmPm);\n    var oldTime = timeArray.join(\":\");\n    console.log(oldTime);\n  }\n}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Insertion Sort Part 2",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## Can you sort an entire unsorted array?\n\n## Input Format \nThere will be two lines of input:\n\ns - the size of the array\nar - a list of numbers that makes up the array\nOutput Format \nOn each line, output the entire array at every iteration.\n\n## Constraints \n1≤s≤1000 \n−10000≤x≤10000,x∈ar\n\n## Sample Input\n6\n1 4 3 5 6 2\n\n## Sample Output\n1 4 3 5 6 2 \n1 3 4 5 6 2 \n1 3 4 5 6 2 \n1 3 4 5 6 2 \n1 2 3 4 5 6 \n\n## Explanation \nInsertion Sort checks 4 first and doesn't need to move it, so it just prints out the array. Next, 3 is inserted next to 1, and the array is printed out. This continues one element at a time until the entire array is sorted.\n\n## Task \nThe method insertionSort takes in one parameter: ar, an unsorted array. Use an Insertion Sort Algorithm to sort the entire array."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function processData(input) {\n  \"use strict\";\n  \n  var arr = input.split(/\\n| /);\n  arr.splice(0, 1);\n  \n  for (let i = 0; i < arr.length - 1; i++) {\n    \n    var currentValue = Number(arr[i]);\n    var nextValue = Number(arr[i + 1]);\n    var currentIndex = i;\n    \n    if (currentValue <= nextValue) {\n      let newString = arr.join(\" \");\n      console.log(newString);\n    } else {\n      arr[i + 1] = currentValue;\n      if (currentIndex === 0) {\n        arr[i] = nextValue;\n      }\n      while (currentIndex >= 0) {\n        var prevValue = Number(arr[currentIndex - 1]);\n        if (nextValue < prevValue) {\n          arr[currentIndex] = arr[currentIndex - 1];\n        } else {\n          arr[currentIndex] = nextValue;\n          let newString = arr.join(\" \");\n          console.log(newString);\n          break;\n        }\n        currentIndex--;\n      }\n    }\n  }\n}"
+    }
+  ]
+}
