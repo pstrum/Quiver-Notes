@@ -1,0 +1,14 @@
+{
+  "title": "Calculate Total from Tip & Tax",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": ""
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function total(input) {\n  //Enter your code here\n  \"use strict\";\n  \n  var arr = input.split(/\\n| /),\n      m = Number(arr[0]),\n      t = Number(arr[1]),\n      x = Number(arr[2]);\n  \n  var tip = (t * m / 100).toFixed(2);\n  var tax = (x * m / 100).toFixed(2);\n  var price = (m + Number(tip) + Number(tax));\n  \n  console.log(\"The final price of the meal is $\" + Math.round(price) + \".\");\n}"
+    }
+  ]
+}

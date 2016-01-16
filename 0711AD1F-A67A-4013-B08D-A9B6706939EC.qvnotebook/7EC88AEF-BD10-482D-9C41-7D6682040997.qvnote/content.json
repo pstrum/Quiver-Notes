@@ -1,0 +1,14 @@
+{
+  "title": "Quicksort1 - Partition",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## Challenge \nYou're given an array ar and a number p. Partition the array, so that all elements greater than p are to its right, and all elements smaller than p are to its left. p is called the pivot of the partition.\n\n**Guideline** - In this challenge, you do not need to move around the numbers 'in-place'. This means you can create two lists and combine them at the end.\n\n## Input Format \nYou will be given an array of integers. The number p is the first element in ar.\n\nThere are two lines of input:\n\nn - the number of elements in the array ar\nthe n elements of ar (including p at the beginning)\n\n## Output Format \nPrint out the numbers of the partitioned array on one line.\n\n## Constraints\n1≤n≤1000\n−1000≤x≤1000,x∈ar\nAll elements will be unique.\nMultiple answer can exists for the given test case. Print any one of them.\n\n## Sample Input\n5\n4 5 3 7 2\n\n## Sample Output\n3 2 4 5 7\n\n## Explanation \np equals 4. 5 is moved to the right of 4, 2 is moved to the left of 4, and 3 is also moved to the left of 4. The numbers otherwise remain in the same order. Similarly, another valid solution will be [2,3,4,5,7] and so on.\n\n## Task \nComplete the method partition which takes an array ar. The first element in ar is the number p."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function processData(input) {\n  //Enter your code here\n  \"use strict\";\n  \n  var arr = input.split(/\\n| /);\n  arr.splice(0, 1);\n  \n  var p = Number(arr[0]);\n  \n  for (let i = 1; i < arr.length; i++) {\n    \n    var currentValue = Number(arr[i]);\n    \n    if (currentValue < p) {       // If the current value is less than the pivot\n      arr.splice(i, 1)            // Remove the current value from the array\n      arr.unshift(currentValue);  // Add the current value to the start of the array\n    }\n  }\n  var stringIt = arr.join(\" \");\n  console.log(stringIt);\n}"
+    }
+  ]
+}

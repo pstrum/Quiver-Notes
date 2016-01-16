@@ -1,0 +1,20 @@
+{
+  "title": "Quicksort2 - Sorting v1",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "// Partition an Array\nfunction partition(someArray) {\n  \n  // Store the value of the first item\n  var firstItem = Number(someArray[0]);\n  \n  // Loop through the array\n  for (let i = 1; i < someArray.length: i++) {\n    \n    // Note the value at the current index\n    let currentValue = Number(someArray[i]);\n    // Note the current index of the original first item\n    let pIndex = someArray.indexOf(String(firstItem));\n    \n    // If the currentValue is less than the first item\n    if (currentValue < firstItem) {\n      // remove the currentValue\n      someArray.splice(i, 1);\n      // If pivot's index is 0\n      if (pIndex == 0) {\n        // Add current value to start of array\n        someArray.unshift(currentValue);\n      } else {\n        // Otherwise, add curent value to before pivot\n        someArray.splice(pIndex, 0, currentValue);\n      }\n    }\n  }\n  var index = someArray.indexOf(String(firstItem));\n  return index;\n}\n"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function swap(someArray, firstIndex, secondIndex) {\n  var stored = someArray[firstIndex];\n  someArray[firstIndex] = someArray[secondIndex];\n  items[secondIndex] = stored;\n}\n\nfunction partition(someArray, leftIndex, rightIndex) {\n  var pivot = someArray[Math.floor((rightIndex + leftIndex) / 2)],\n  var i = leftIndex;\n  var j = rightIndex;\n  \n  while (i <= j) {\n    \n    while (someArray[i] < pivot) {\n      i++;\n    }\n    \n    while (someArray[j] > pivot) {\n      j--;\n    }\n    \n    if (i <= j) {\n      swap(someArray, i, j);\n      i++;\n      j--;\n    }\n  }\n  return i;\n}"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "// Sort an Array\nfunction quickSort(someArray, leftIndex, rightIndex) {\n  \n  // Determine the length of array\n  if (someArray.length > 1) {\n    // Set the index to the \n    let index = partition(someArray);\n    \n    // Check if there are still items on the left to be sorted\n    if (leftIndex < index - 1) {\n      // If so, quickSort them!\n      quickSort(someArray, leftIndex, index - 1);\n    }\n    \n    // Check if there are still items on the right to sort\n    if (index < rightIndex) {\n      quickSort(someArray, index, rightIndex);\n    }\n  }\n  return someArray;\n}\n\nquckSort(arr, 0, arr.length - 1);"
+    }
+  ]
+}
