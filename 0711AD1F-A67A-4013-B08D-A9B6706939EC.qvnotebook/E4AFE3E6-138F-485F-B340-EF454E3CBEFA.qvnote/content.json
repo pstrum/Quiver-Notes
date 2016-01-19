@@ -1,0 +1,18 @@
+{
+  "title": "The Quickest Way Up",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "The ladder that spans the greatest distance will always be what I want to shoot for, but I want to start at the end. \nAsk yourself:\n- Which ladder ends closest to 100?\n- How big is it?\n\n## Avoid a Snake Function\nRoll six, is it on a snake? No - keep it. Yes - Roll a five, is it on a snake? Repeat."
+    },
+    {
+      "type": "markdown",
+      "data": "1. Put the numbers into an object (hash map) where the key is the start and the value is the end.\n2. Create a variable for the final position we want (100)\n3. Create a variable to store the number of positions. We start at 1.\n4. Create a variable to stor the number of steps. We start at 0.\n5. Loop through. \n6. for x:y, if y is greater than x, keep x\n7. if"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "4\n8 52    // 44\n6 80    // 72\n26 42   // 16\n2 72    // 70\n\n1 10\n11 15\n16 34\n30 36\n37 90\n\n9\n51 19\n39 11\n37 29\n81 3\n59 5\n79 23\n53 7\n43 33\n77 21 "
+    }
+  ]
+}
