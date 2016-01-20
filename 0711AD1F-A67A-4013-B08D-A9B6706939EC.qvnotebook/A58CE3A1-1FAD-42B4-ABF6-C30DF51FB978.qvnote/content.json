@@ -1,0 +1,23 @@
+{
+  "title": "Replace All Vowels",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Specifically, find all vowels in some `.class` and replace them with `\"\"`\n\nHere is a method for stripping vowels from an input (string)"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function stripVowels(input) {\n  return str.replace(/[aeiou]/gi, \"\");\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "Loop through `.class` children and remove vowels from their text.\nSubsequently, replace their text with the text without vowels."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\".blog-post\").children().each(function() {\n  var noVowels = stripVowels($(this).text());\n  $(this).text(noVowels);\n});"
+    }
+  ]
+}

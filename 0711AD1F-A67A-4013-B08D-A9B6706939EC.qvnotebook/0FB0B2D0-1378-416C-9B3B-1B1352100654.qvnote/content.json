@@ -1,0 +1,28 @@
+{
+  "title": "Insert Text",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Write jQuery Code to add a <b> tag at the beginning of the list item, containing the index of the list item"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "// Sample Data\n<body>\n  <ul>\n    <li>Html Tutorial</li>\n    <li>Mongodb Tutorial</li>\n    <li>Python Tutorial</li>\n  </ul>\n</body>"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"ul li\").each(function() {\n  var index = $(this).index();\n  $(this).prepend(\"<b>\" + index + \":</b>\");\n});"
+    },
+    {
+      "type": "markdown",
+      "data": "## Option 2"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"li\").each(function(index, elem) {\n  $(elem).prepend(\"<b>\" + index + \": </b> \");\n});"
+    }
+  ]
+}

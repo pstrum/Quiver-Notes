@@ -1,0 +1,14 @@
+{
+  "title": "Find H1’s and Apply Background",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Find all h1 elements that are children of a div element and apply a backgroud to them"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"h1\").parent(\"div\").css(\"background-color\", \"red\");"
+    }
+  ]
+}

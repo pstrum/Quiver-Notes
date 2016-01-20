@@ -1,7 +1,8 @@
 {
   "created_at" : 1452892165,
   "tags" : [
-
+    "algorithms",
+    "code-challenge"
   ],
   "title" : "Quicksort2 - Sorting v1",
   "updated_at" : 1452970629,

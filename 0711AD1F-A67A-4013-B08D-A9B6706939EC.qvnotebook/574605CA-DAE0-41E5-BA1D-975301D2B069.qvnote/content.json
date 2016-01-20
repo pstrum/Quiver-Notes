@@ -1,0 +1,14 @@
+{
+  "title": "Set Page Background to Red",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Add a css background-color property to the body of the page."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"body\").css(\"background-color\", \"red\");"
+    }
+  ]
+}
