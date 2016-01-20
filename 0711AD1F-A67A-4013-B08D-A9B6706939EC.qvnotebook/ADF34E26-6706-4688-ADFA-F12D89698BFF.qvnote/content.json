@@ -1,0 +1,14 @@
+{
+  "title": "Hide all <input> elements within a <form>",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Select all `<input>` elements that are within a `<form>` and apply the `.hide()` method"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"form\").children(\"input\").hide();"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Select a single element from group",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Say you have this\n```\n<body>\n  <ul>\n    <li>Html Tutorial</li>\n    <li>Mongodb Tutorial</li>\n    <li>Python Tutorial</li>\n  </ul>\n</body>\n```\nGet `Mongodb Tutorial`"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"li:eq(1)\").text();"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$('li:contains(\"Mongodb\")').text();"
+    }
+  ]
+}

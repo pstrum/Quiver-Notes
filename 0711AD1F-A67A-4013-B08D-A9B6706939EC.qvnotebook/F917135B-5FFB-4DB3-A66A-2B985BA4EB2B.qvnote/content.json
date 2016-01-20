@@ -1,0 +1,15 @@
+{
+  "title": "Appending Content",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "var toAppend = \"<div><h1>JQuery Core</h1></div>\";\n\n$(\"body\").append(toAppend);"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"<div><h1>JQuery Core</h1></div>\").appendTo(\"body\");"
+    }
+  ]
+}

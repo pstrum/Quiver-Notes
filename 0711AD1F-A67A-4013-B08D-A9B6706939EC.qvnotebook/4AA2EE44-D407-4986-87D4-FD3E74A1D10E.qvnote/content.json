@@ -1,0 +1,15 @@
+{
+  "title": "Change the hyperlink and the text of a existing link",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "<a href=\"www.w3resource.com/sqlite/\" id='tut'>SQLite Tutorial</a>"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"#tut\").attr(\"href\", \"www.w3resource.com/mysql/mysql-tutorials.php\");\n$(\"#tut\").text(\"MySQL Tutorial\");"
+    }
+  ]
+}

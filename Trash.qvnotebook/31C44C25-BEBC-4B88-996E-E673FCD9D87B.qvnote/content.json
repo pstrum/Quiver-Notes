@@ -1,0 +1,14 @@
+{
+  "title": "Check/uncheck a checkbox input or radio button",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Access the radio inputs\n"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "if ( $(\"input\").is(\":checked\") === false ) {\n  $(\"input\").prop(\"checked\", true);\n}"
+    }
+  ]
+}

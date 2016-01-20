@@ -1,0 +1,14 @@
+{
+  "title": "Find the specific option tag text value of a selected option",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "You have to first access the `<select>` element and then use the `:selected` selector"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"#myselect option:selected\").text();"
+    }
+  ]
+}
