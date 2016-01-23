@@ -1,0 +1,10 @@
+{
+  "title": "Show Window Width as Resize",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(window).resize(function() {\n  $(\"body\").html($(window).width());\n});"
+    }
+  ]
+}

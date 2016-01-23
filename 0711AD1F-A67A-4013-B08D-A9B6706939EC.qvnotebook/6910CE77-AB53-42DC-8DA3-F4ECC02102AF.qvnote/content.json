@@ -1,0 +1,10 @@
+{
+  "title": "Make box grow and shrink",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"#btn1\").click(function() {\n  $(\"#box\").animate({\n    height: \"50px\",\n    width: \"50px\"\n  }, 1000);\n});\n\n$(\"#btn2\").click(function() {\n  $(\"#box\").animate({\n    height: \"100px\",\n    width: \"100px\"\n  }, 1000);\n});"
+    }
+  ]
+}

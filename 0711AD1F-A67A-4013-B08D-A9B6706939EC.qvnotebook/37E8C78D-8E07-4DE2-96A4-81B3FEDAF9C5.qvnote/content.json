@@ -1,0 +1,10 @@
+{
+  "title": "Click on element to toggle background color",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"p\").click(function() {\n  $(this).toggleClass(\"highlight\");\n});"
+    }
+  ]
+}

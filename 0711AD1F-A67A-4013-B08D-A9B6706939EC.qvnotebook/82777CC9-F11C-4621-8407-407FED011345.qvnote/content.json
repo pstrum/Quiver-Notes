@@ -1,0 +1,10 @@
+{
+  "title": "Check whether an element has a class",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "console.log($(\"#div1\").hasClass(\"divclass\"));\nconsole.log($(\"#div2\").hasClass(\"divclass\"));\nconsole.log($(\"#div3\").hasClass(\"divclass\"));\n\n// (if only first one has the class)\n// true\n// false\n// false"
+    }
+  ]
+}

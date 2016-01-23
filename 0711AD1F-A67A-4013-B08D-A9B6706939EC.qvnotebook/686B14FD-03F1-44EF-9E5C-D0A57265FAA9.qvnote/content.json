@@ -1,0 +1,10 @@
+{
+  "title": "Display the position of an element",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"button\").click(function(event) {\n  event.preventDefault();\n  var $divPos = $(\"div\").position();\n  $(\"div\").text(\"This box's position is \" + $divPos.left + \" spaces left and \" + $divPos.top + \" spaces from the top.\");\n});"
+    }
+  ]
+}

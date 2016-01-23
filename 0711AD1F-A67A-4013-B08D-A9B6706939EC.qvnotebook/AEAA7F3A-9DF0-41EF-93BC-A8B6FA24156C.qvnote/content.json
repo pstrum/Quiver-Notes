@@ -1,0 +1,10 @@
+{
+  "title": "Hover show `<div>` dimensions",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "var $divWidth = $(\"div\").width();\nvar $divHeight = $(\"div\").height();\n\n$(\"div\").mouseover(function() {\n  $(this).text($divWidth + \" x \" + $divHeight);\n})\n.mouseleave(function() {\n  $(this).text(\"\");\n});"
+    }
+  ]
+}

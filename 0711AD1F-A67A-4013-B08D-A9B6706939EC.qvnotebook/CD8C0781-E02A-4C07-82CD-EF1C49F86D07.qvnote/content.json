@@ -1,0 +1,10 @@
+{
+  "title": "Display Tagname on click",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"body\").on(\"click\", function(event) {\n  $(\"#log\").text(event.target.tagName);\n});"
+    }
+  ]
+}

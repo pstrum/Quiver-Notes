@@ -1,0 +1,10 @@
+{
+  "title": "Show the Position of the Mouse",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(document).mousemove(function(event) {\n  $(\"div\").text(event.pageX + \" x \" + event.pageY);\n});"
+    }
+  ]
+}

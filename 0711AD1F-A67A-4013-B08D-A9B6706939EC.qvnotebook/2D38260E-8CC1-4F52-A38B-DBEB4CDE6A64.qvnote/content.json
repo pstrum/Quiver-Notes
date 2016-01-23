@@ -1,0 +1,10 @@
+{
+  "title": "Add/Remove Class on Focus/Blur",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"input\").focus(function() {\n  $(this).addClass(\"focused\");\n})\n.blur(function() {\n  $(this).removeClass(\"focused\");\n});"
+    }
+  ]
+}

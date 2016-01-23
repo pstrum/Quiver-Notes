@@ -1,0 +1,10 @@
+{
+  "title": "Single and Double Clicks",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"p\").click(function() {\n  $(this).append(\"<p>This is a click event</p>\");\n});\n\n$(\"p\").dblclick(function() {\n  $(this).append(\"<p>This is a double click event\");\n});"
+    }
+  ]
+}

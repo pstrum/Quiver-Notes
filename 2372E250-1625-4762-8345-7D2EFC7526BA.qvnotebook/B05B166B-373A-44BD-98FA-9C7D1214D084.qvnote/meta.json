@@ -1,9 +1,10 @@
 {
   "created_at" : 1453244901,
   "tags" : [
-
+    "interview-questions",
+    "javascript"
   ],
-  "title" : "Untitled Note",
-  "updated_at" : 1453305962,
+  "title" : "Explain Event Delegation",
+  "updated_at" : 1453322456,
   "uuid" : "B05B166B-373A-44BD-98FA-9C7D1214D084"
 }
