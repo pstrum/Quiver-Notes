@@ -1,0 +1,10 @@
+{
+  "title": "Print selection from a <select> menu",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"select\").change(function() {\n  var printString = \"\";\n  $(\"select option:selected\").each(function() {\n    printString += $(this).text() + \" \";\n  });\n  $(\"div\").text(printString);\n});"
+    }
+  ]
+}

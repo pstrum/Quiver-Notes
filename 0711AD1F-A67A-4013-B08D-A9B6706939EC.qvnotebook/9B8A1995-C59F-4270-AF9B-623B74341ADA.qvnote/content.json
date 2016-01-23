@@ -1,0 +1,10 @@
+{
+  "title": "Hide all headers on click",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "// Hide the header on click\n$(\":header\").on(\"click\", function() {\n  $(this).hide();\n});\n\n// Hide all headers on click\n$(\":header\").on(\"click\", function() {\n  $(\":header\").hide();\n});\n\n// Another version\n$(\"h1, h2, h3\").click(function() {\n  $(this).hide();\n});"
+    }
+  ]
+}

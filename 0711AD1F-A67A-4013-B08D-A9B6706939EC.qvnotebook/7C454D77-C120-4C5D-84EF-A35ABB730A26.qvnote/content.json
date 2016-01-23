@@ -1,0 +1,10 @@
+{
+  "title": "Detect the Key Pressed",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"input\").on(\"keyup\", function(event) {\n  var theKey = event.which;\n  $(\"div\").html(\"A \" + event.type + \"! \" + theKey);\n});"
+    }
+  ]
+}

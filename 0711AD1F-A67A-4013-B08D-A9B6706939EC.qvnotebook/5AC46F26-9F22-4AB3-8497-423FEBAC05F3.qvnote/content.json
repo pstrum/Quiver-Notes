@@ -1,0 +1,19 @@
+{
+  "title": "Show text as you type in input field",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"input\").on(\"focus\", function(event) {\n  $(this).keyup(function(event) {\n    $(\"div\").html($(this).val());\n  });\n});"
+    },
+    {
+      "type": "markdown",
+      "data": "Shorter"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"input\").on(\"keyup\", function(event) {\n  $(\"div\").html($(this).val());\n});"
+    }
+  ]
+}

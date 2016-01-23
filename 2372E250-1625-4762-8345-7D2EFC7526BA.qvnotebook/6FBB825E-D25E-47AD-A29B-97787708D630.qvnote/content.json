@@ -1,0 +1,9 @@
+{
+  "title": "Explain how `this` works in JavaScript",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "`this` will always reference an object. The metaphor I see most often, and specifically from Kyle Simpson, is the `this` can be thought of like the address to  building that you can then enter and go up floor by floor to access what you need. This is a big part of object oriented programing, because when you create a `new` object using a constructor function, `this` will then point to the new object that was created and it can trace back up the prototype linkage to find what you need."
+    }
+  ]
+}

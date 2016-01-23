@@ -1,0 +1,10 @@
+{
+  "title": "Display an element’s width and height",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "var $buttonInner = $(\"button[name*=inner]\");\n\n$buttonInner.click(function(event) {\n  event.preventDefault();\n  var $divWidth = $(\"div\").innerWidth();\n  var $divHeight = $(\"div\").innerHeight();\n  $(\"div\").text(\"This box's width is \" + $divWidth + \" and it's height is \" + $divHeight);\n});"
+    }
+  ]
+}

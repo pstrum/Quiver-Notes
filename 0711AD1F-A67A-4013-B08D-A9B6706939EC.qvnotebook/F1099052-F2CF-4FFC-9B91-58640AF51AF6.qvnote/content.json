@@ -1,0 +1,10 @@
+{
+  "title": "Toggle Class on Double Click",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"p:first\").dblclick(function() {\n  $(this).toggleClass(\"dbl\");\n});"
+    }
+  ]
+}

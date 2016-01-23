@@ -1,0 +1,10 @@
+{
+  "title": "Mouse Up and Down",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"p\").mousedown(function() {\n  $(this).text(\"Mouse clicked down\");\n})\n.mouseup(function() {\n  $(this).text(\"Mouse up\");\n});"
+    }
+  ]
+}

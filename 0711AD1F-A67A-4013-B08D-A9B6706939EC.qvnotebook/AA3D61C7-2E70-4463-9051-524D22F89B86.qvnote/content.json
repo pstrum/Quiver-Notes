@@ -1,0 +1,10 @@
+{
+  "title": "Number of LI's",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$(\"button\").click(function() {\n  console.log($(\"li\").length);\n});"
+    }
+  ]
+}
