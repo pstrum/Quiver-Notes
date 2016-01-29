@@ -1,0 +1,9 @@
+{
+  "created_at" : 1453576642,
+  "tags" : [
+
+  ],
+  "title" : "Difference between: function Person(){}, var person = Person(), and var person = new Person()?",
+  "updated_at" : 1453576647,
+  "uuid" : "FA729AF3-874B-4F24-A8EB-59F3FE561249"
+}

@@ -1,0 +1,9 @@
+{
+  "created_at" : 1453577277,
+  "tags" : [
+
+  ],
+  "title" : "Create a for loop that iterates up to 100 while outputting \"fizz\" at multiples of 3, \"buzz\" at multiples of 5 and \"fizzbuzz\" at multiples of 3 and 5",
+  "updated_at" : 1453577485,
+  "uuid" : "BB7EC954-7706-4BD0-B854-7ECDACA7E346"
+}
