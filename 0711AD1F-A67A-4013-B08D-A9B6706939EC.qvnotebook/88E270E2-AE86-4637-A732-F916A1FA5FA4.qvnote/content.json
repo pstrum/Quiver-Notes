@@ -1,0 +1,10 @@
+{
+  "title": "Animate Element on Mouseenter Mouseleave",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$('.tour').on('mouseenter', function() {\n  $(this).addClass('highlight');\n  $(this).find('.per-night').animate({'top': '-14px', 'opacity': '1'}, 'fast');\n});\n$('.tour').on('mouseleave', function() {\n  $(this).removeClass('highlight');\n  $(this).find('.per-night').animate({'top': '0', 'opacity': '0'}, 'fast');\n});"
+    }
+  ]
+}

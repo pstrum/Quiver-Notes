@@ -1,0 +1,9 @@
+{
+  "title": "Explain Function.prototype.bind.",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "`.bind()` creates a function and sets the `this` value to the parameter. In this case, Function.prototype "
+    }
+  ]
+}

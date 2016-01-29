@@ -1,0 +1,9 @@
+{
+  "title": "Difference between: function Person(){}, var person = Person(), and var person = new Person()?",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": ""
+    }
+  ]
+}

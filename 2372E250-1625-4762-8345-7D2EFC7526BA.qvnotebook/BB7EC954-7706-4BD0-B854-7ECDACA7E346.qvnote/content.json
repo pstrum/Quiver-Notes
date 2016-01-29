@@ -1,0 +1,41 @@
+{
+  "title": "Create a for loop that iterates up to 100 while outputting \"fizz\" at multiples of 3, \"buzz\" at multiples of 5 and \"fizzbuzz\" at multiples of 3 and 5",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "First I would declare a variable i."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "var i;"
+    },
+    {
+      "type": "markdown",
+      "data": "The for loop would look like this:"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "for(i = 1; i <= 100; i++) {};"
+    },
+    {
+      "type": "markdown",
+      "data": "Now we write a conditional statement for our variable i.\nWhat if i is divisible by 15? Output fizzbuzz."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "for(i=1; i <= 100; i++) {\n  if (i % 15 === 0) {\n    console.log(\"fizzbuzz\");\n  }\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "Then I would add 3 more conditions: if i is divisible by 3, output \"fizz\"; if i is divisible by 5, output \"buzz\"; and otherwise, just output i -- the number."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "var i;\nfor(i=1; i <= 100; i++) {\n  if (i % 15 === 0) {\n    console.log(\"fizzbuzz\");\n  } else if (i % 3 === 0) {\n    console.log(\"fizz\");\n  } else if (i % 5 === 0) {\n    console.log(\"buzz\");\n  } else {\n    console.log(i);\n  }\n}"
+    }
+  ]
+}

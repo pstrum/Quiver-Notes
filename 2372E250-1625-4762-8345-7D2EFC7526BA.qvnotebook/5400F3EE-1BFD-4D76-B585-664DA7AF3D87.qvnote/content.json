@@ -1,0 +1,28 @@
+{
+  "title": "Make this work:",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]"
+    },
+    {
+      "type": "markdown",
+      "data": "I would use the array prototype method `concat`. \n\nHow this works is that you take an initial array, which would be the argument, and call on it the `concat` method with argument the exact same argument."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "var duplicate = function dupfunction(initialArray) {\n    var newArray = initialArray.concat(initialArray);\n    return newArray;\n};\nduplicate([1,2,3,4,5]);"
+    },
+    {
+      "type": "markdown",
+      "data": "If you wanted to log this out, just:"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "console.log(duplicate([1,2,3,4,5]));"
+    }
+  ]
+}

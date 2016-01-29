@@ -1,0 +1,13 @@
+{
+  "title": "Explain why the following doesn't work as an IIFE: function foo(){ }();.",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": ""
+    },
+    {
+      "type": "markdown",
+      "data": "## What needs to be changed to properly make it an IIFE?"
+    }
+  ]
+}

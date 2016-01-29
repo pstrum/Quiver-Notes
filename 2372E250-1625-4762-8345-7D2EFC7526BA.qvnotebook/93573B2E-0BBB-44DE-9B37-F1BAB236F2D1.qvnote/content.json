@@ -1,0 +1,23 @@
+{
+  "title": "Implement a Singly-Linked List",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "A singly-linked list is like a scavenger hunt where the nodes that make it up contain *messages* (data) and *next steps* (pointer).\n\nNodes can be separate constructors from a singly-linked list, so to implement one we need to define constructors for both."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "// Node Constructor to store data and point to another node\n\nfunction Node(data) {\n  this.data = data;\n  this.pointer = null;\n}\n\n// SinglyList Constructor to store the node 'head' of a list and 'length' of nodes\n\nfunction SinglyList() {\n  this._length = 0;\n  this.head = null;\n}"
+    },
+    {
+      "type": "markdown",
+      "data": "A singly-linked list can add nodes to itself, remove nodes, and search for a node at position *n* inside it."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "// To add some nodes!\n\nSinglylist.prototype.add = function(value) {\n  // Create a new instance of Node\n  let node = new Node(value);\n  let currentNode = this.head;\n  \n  // Does head point to a node?\n  if (!currentNode) {\n    // No? Assign node as the head\n    this.head = node;\n    // Increment the length\n    this._length++;\n    \n    return node;\n  }\n  \n  // While currentNode has a node immediately following it\n  while (currentNode.nextSibling) {\n    // Set currentNode to the node following it\n    currentNode = currentNode.nextSibling;\n    // After done looping, currentNode will point to the last node in list\n  }\n  \n  // Does head have a sibling following? No?\n  // Make node the value of the sibling following using jQuery\n  currentNode.nextSibling.insertBefore(node);\n  this._length++;\n  \n  return node;\n}; "
+    }
+  ]
+}
