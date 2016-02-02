@@ -1,0 +1,19 @@
+{
+  "title": "jQuery.ajax()",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$('#tour').on('click', 'button', function() { \n  $.ajax('/photos.html', {\n    success: function(response) {\n    \t$(\".photos\").html(response).fadeIn();\n  \t}\n  });\n});"
+    },
+    {
+      "type": "markdown",
+      "data": "## Shorthand Approach"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "$('#tour').on('click', 'button', function() {\n  $.get('/photos.html', function(response) {\n    $('.photos').html(response).fadeIn();\n  });\n});"
+    }
+  ]
+}
