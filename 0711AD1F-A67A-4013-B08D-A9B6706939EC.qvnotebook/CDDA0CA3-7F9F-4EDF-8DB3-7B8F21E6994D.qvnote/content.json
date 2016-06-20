@@ -1,0 +1,14 @@
+{
+  "title": "Utopian Tree",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "The Utopian Tree goes through 2 cycles of growth every year. Each spring, it doubles in height. Each summer, its height increases by 1 meter.\n\nLaura plants a Utopian Tree sapling with a height of 1 meter at the onset of spring. How tall will her tree be after NN growth cycles?"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function utopianTree(cycles) {\n    \n    \"use strict\";\n    \n    var height = 1;\n    \n    for (let i = 1; i <= cycles; i++) {\n        \n        if (i % 2 === 0) {\n            height += 1;\n        } else {\n            height *= 2;\n        }\n    }\n    \n    console.log(height);\n}"
+    }
+  ]
+}

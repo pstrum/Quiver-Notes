@@ -1,0 +1,10 @@
+{
+  "title": "Return Number from Roman Numeral String",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function returnNumfromString(romanNum) {\n\n  var result = 0;\n\n  var someArray = romanNum.split(\"\");\n  var newArray = [];\n\n  for (var i = 0; i < someArray.length; i++) {\n\n    var num;\n\n    switch (someArray[i]) {\n      case \"I\":\n        num = 1;\n      case \"V\":\n        num = 5;\n    }\n\n    newArray.push(num);\n  }\n\n  for (var y = 0; y < newArray.length; y++) {\n    result += newArray[y];\n  }\n\n  console.log(result);\n  return result;\n}\n\nreturnNumfromString(\"IL\");\n"
+    }
+  ]
+}

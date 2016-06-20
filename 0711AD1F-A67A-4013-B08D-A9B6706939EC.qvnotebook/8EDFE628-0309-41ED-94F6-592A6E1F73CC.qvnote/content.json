@@ -1,0 +1,10 @@
+{
+  "title": "Snakes and Ladders",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "var board = {\n  12: 98,\n  32: 62,\n  42: 68,\n  49: 47,\n  67: 17,\n  75: 19,\n  79: 27,\n  93: 37,\n  95: 13,\n  97: 25\n}\n\nconst final = 100;\n\nfunction shortestRoute(someObject) {\n  var steps = 0;\n  // Loop through til final position\n}"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Notes on Algorithms",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "What we are concerned with is efficient procedures for solving large scale problems.\n\nEfficiency *is* a concern!\n\nBy the time we are older, trillion might be a small number. Scalability is very important. \n\nAs inputs get larger and larger, how do our algorithms do?\n\n## Algorithmic Thinking\n### Peak Finder\nBasic 'toy' problem. Points out the issues involved in effecient algorithms. \n\n#### One-dimensional version**\nYou have an array: `[a, b, c, d, e, f, g, h, i]` where `a-i` are numbers `1-9`.\n\nPosition `2` is a peak, if and only if, `b >= a` and `b >= c`.\n\nIn a one-dimensional array, this is simple: \n- Look to the left and right.\n- If you are greater than or equal to both, you are a peak!\n- If you are an edge, then you only have to look to one side. So, position 9 is a peak if `i >= h`.\n\n**Problem:** Find a peak, if it exists.\n\n**Solution:** Straight forward. Starts from the left and goas to the right of the array. Worst case complexity is O(n) because you had to go from the left all the way to the right.\n\n**Now, how could we lower the asymtotical complexity?**\nDivide and Conquer Algorithm.\nLook at the n/2 position and look to the left and the right. This works because if a[n/2] is less than a[n/2 - 1] then the peak has to be to the left and vise-versa if a[n/2 + 1] is greater than a[n/2]. If both aren't true, then a[n/2] is the peak! \n```\nif (a[n/2] < a[n/2-1]) {\n  only look at the left half of 1...n/2 - 1 to look for peak\n} else if (a[n/2] < a[n/2 + 1]) {\n  only look at the right half.\n} else {\n  n/2 position is a peak.\n}\n```\n\n**So, what about it's complexity?**\nT(n) is the work an algorithm does of size n.\nThen, \n`T(n) = T(n/2) + O(1)`\nO(1) corresponds to the two equations you check on the left and right side. \n\nEventually, T(1) = O(1) because in a one element array, it will be the peak.\n\nT(n) = O(1) + ... + O(1) (log2(n) times) = O(log2(n))\n\n#### Two-dimensional Version\nBasically, you have a hill where the cell is surrounded by values less than it. \n\n`a` is a peak if `a >= b && a >= c && a >= d && a >= e`\n\nThe solution is O(nm) or O(n2) if m === n in complexity.\n\n\n\n\n\n\n"
+    },
+    {
+      "type": "markdown",
+      "data": "\n\n\n\n\n\n\n\n\n"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Project: CRUD App to Make Places",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "I am going to build an API that:\n- Handles CRUD (create, read, update, delete) for places.\n- Have a standard URL (`http://example.com/api/places` and `http://example.com/api/places/:place_id`)\n- Utilize HTTP `GET`, `POST`, `PUT`, `DElETE`\n- Return JSON Data\n- Log all requests to the console."
+    },
+    {
+      "type": "markdown",
+      "data": "Open last session. Show \n\nadd hide if they are shown\nremove hide if aria-controls === data-weather"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "switch (windB) {\n  case windB >= 348.75 && windB <= 360:\n    bear = 'N';\n  case windB >= 0 && windB <= 11.25:\n    bear = 'N';\n  case windB >= 11.26 && windB <= 33.75:\n    bear = 'NNE';\n  case windB >= 33.76 && windB <= 56.25:\n    bear = 'NE';\n  case windB >= 56.26 && windB <= 78.75:\n    bear = 'ENE';\n  case windB >= 78.76 && windB <= 101.25:\n    bear = 'E';\n  case windB >= 101.26 && windB <= 123.75:\n    bear = 'ESE';\n  case windB >= 123.76 && windB <= 146.25:\n    bear = 'SE';\n  case windB >= 146.26 && windB <= 168.75:\n    bear = 'SSE';\n  case windB >= 168.76 && windB <= 191.25:\n    bear = 'S';\n  case windB >= 191.26 && windB <= 213.75:\n    bear = 'SSW';\n  case windB >= 213.76 && windB <= 236.25:\n    bear = 'SW';\n  case windB >= 236.26 && windB <= 258.75:\n    bear = 'WSW';\n  case windB >= 258.76 && windB <= 281.25:\n    bear = 'W';\n  case windB >= 281.26 && windB <= 303.75:\n    bear = 'WNW';\n  case windB >= 303.76 && windB <= 326.25:\n    bear = 'NW';\n  case windB >= 326.26 <= windB <= 348.74:\n    bear = 'NNW';\n}"
+    }
+  ]
+}

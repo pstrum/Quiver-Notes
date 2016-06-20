@@ -1,0 +1,14 @@
+{
+  "title": "Funny String",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Suppose you have some string S having length N that is indexed from 0 to N−1. You also have some string R that is the reverse of string S. S is funny if the condition | S[j]−S[j−1] |=| R[j]−R[j−1] | is true for every j from 1 to N−1.\n\nNote: For some string S, S[j] denotes the ASCII value of the jth zero-indexed character in S. The absolute value of some integer x is written as | x |.\n\nInput Format\n\nThe first line contains an integer, T (the number of test cases). \nThe T subsequent lines each contain a string, where the ith line is string Si.\n\nConstraints \n1≤T≤10 \n0≤i≤T−1 \n2≤length of Si≤10000\n\nOutput Format\n\nFor each Si, print Funny or Not Funny on a new line."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function processData(input) {\n    \"use strict\";\n    \n    var inputArray = input.split(\"\\n\");\n    \n    for (let i = 1; i < inputArray.length; i++) {\n        text(inputArray[i]);\n    }\n    \n    function text(word) {\n        \"use strict\";\n        var revString = word.split(\"\").reverse().join(\"\");\n        var notFunny = 0;\n        for (let i = 1; i < word.length; i++) {\n            var val1 = Math.abs(word.charCodeAt(i) - word.charCodeAt(i - 1));\n            var val2 = Math.abs(revString.charCodeAt(i) - revString.charCodeAt(i - 1));\n            if (val1 !== val2) {\n                console.log(\"Not Funny\");\n                notFunny++;\n                break;\n            }\n        }\n        if (notFunny === 0) {\n            console.log(\"Funny\");\n        }\n    }\n} "
+    }
+  ]
+}

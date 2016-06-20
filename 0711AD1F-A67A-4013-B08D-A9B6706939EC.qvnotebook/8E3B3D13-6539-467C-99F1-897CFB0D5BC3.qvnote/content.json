@@ -1,0 +1,23 @@
+{
+  "title": "Reversing an Array",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## The Easy Way"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "var someArray = [a, b, c, d];\nvar someArrayReversed = someArray.reverse();\n\n// Make it a string\nvar toAString = someArrayReversed.join(' ');"
+    },
+    {
+      "type": "markdown",
+      "data": "## A bit more effecient"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "var someArray = [a, b, c, d];\nvar someArrayReversed = [];\n\nfor (var i = someArray.length - 1; i >= 0; i--) {\n  someArrayReversed.push(someArray[i]);\n}"
+    }
+  ]
+}
