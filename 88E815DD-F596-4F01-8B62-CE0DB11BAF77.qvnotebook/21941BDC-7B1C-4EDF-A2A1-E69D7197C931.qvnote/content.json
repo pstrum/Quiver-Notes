@@ -1,0 +1,22 @@
+{
+  "title": "Weather App Specifics",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "1. Enter any location using Google Maps API\n2. Select the location by clicking on it or hitting enter\n3. Show current weather in that area: Feels Like, Precipitation, Humidity, Dew Point, Wind, Cloud Cover, High, and low\n4. Show future weather: Hour, Hourly, 7-day\n5. Show historic highs, lows, dry days, fog days, snow days, average rain organized by month\n6. Show a search history/saved searches."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "// Sort the array using a quicksort or merge-sort method.\n// Inculde a condition in the sorting algorithm to return a number"
+    },
+    {
+      "type": "markdown",
+      "data": "## If I built out the API, what endpoints would I have?\n- Hourly: `/hourly`\n- Daily: `/daily`\n- Monthly: `/monthly`\n- Locations: `/locations`\n- Login: `/login`\n- Search: `/search`\n\n## Differences\nIf you are logged in, the search doesn't save to localStorage, but to our database. So locations still looks the same with history and saved, but it is in our database and not the localStorage object. *OR* having logged in gets you the access to save locations."
+    },
+    {
+      "type": "markdown",
+      "data": "## Saved Locations\n- There is a save button next to each location on the history, and clicking it moves it to a different object.\n- The saved locations have a delete button that removes them from the object in our database. "
+    }
+  ]
+}

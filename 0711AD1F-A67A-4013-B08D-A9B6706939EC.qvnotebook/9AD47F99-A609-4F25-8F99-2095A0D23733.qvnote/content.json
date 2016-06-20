@@ -1,0 +1,14 @@
+{
+  "title": "Pangram",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Pangrams are sentences constructed by using every letter of the alphabet at least once.\n\nGiven a sentence `input`, determine if it is a pangram or not."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function processData(input) {\n    //Enter your code here\n    \n    \"use strict\";\n    \n    var lowerInput = input.toLowerCase();\n    var letters = \"abcdefghijklmnopqrstuvwxyz\";\n    var counter = 0;\n    \n    for (let i = 0; i < letters.length; i++) {\n        \n        var letter = letters.charAt(i);\n        \n        if (lowerInput.search(letter) === -1) {\n            console.log(\"not pangram\");\n            break;\n        } else {\n            counter++;\n        }\n    }\n    \n    if (counter === 26) {\n        console.log(\"pangram\");\n    }\n} "
+    }
+  ]
+}

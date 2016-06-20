@@ -1,0 +1,10 @@
+{
+  "title": "Update subscribe layout",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "@media (min-width: 768px) {\n  .flex-container-row {\n    display: -webkit-flex;\n   display: flex;\n   -webkit-flex-direction: row;\n   flex-direction: row;\n  }\n  .vert-mid-parent {\n    position: relative;\n    min-height: 100%;\n  }\n  .vert-mid-child {\n    position: absolute;\n    top: 50%;\n    transform: translateY(-50%);\n    display: block;\n  }\n  .arrow-right:after {\n    content: \"\\25ba\";\n    color: #f79423;\n    padding-left: 5px;\n  }\n}\n\np {\n  width: 100%;\n  text-align: right;\n}"
+    }
+  ]
+}

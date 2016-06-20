@@ -23,6 +23,15 @@
       "type": "code",
       "language": "javascript",
       "data": "console.log(duplicate([1,2,3,4,5]));"
+    },
+    {
+      "type": "markdown",
+      "data": "Another way to solve this:"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "var duplicate = function dupfunction(initialArray) {\n  // the slice() method returns a copy of (a portion of) an array.\n  // this is slicing from the beginning.\n  var newArray = initialArray.slice(0);\n  for (var i = 0; i < initialArray.length; i++) {\n    newArray.push(initialArray[i]);\n  }\n  console.log(newArray);\n  return newArray;\n};\n\nduplicate([1,2,3,4,5]);"
     }
   ]
 }

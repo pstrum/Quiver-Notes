@@ -1,0 +1,14 @@
+{
+  "title": "Lonely Integer",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "There are N integers in an array A. All but one integer occur in pairs. Find the number that occurs only once. The array always has an odd number of elements."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "function processData(input) {\n    \n    var toTest = input.split(\"\\n\");\n    var example = toTest[1].split(\" \");\n    \n    findSingleDigit(example);\n    \n    function findSingleDigit(someArray) {\n        \"use strict\";\n        \n        someArray.forEach(function find(element) {\n            var idx = someArray.indexOf(element);\n            var howMany = 0;\n            while (idx !== -1) {\n                howMany++;\n                idx = someArray.indexOf(element, idx + 1);\n            }\n            if (howMany === 1) {\n                console.log(element);\n            }\n        });    \n    }\n}"
+    }
+  ]
+}
