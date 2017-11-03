@@ -1,0 +1,9 @@
+{
+  "title": "Check if Prime",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "All numbers are divisible by 1 and itself. To check for prime numbers we have to make sure a number has no other divisors. To do this we:\n\n- Loop through all numbers from 2 up until the number itself (half the number, actually, i <= n/2)\n- Check to see if each number is divisible (the remainder is 0; n % i === 0)\n- If a number is divisible, stop the loop and return `false`.\n- If no numbers are divisible, then return `true`"
+    }
+  ]
+}
